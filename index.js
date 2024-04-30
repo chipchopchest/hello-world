@@ -28,3 +28,6 @@ el.addEventListener('keyup', e => {
     ? 'display: block'
     : 'display: none';
 });
+function isEmptyObject(obj) {
+  return Object.keys(obj).length === 0;
+}
