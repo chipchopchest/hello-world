@@ -42,3 +42,7 @@ const httpsRedirect = () => {
   if (location.protocol !== 'https:')
     location.replace('https://' + location.href.split('//')[1]);
 };
+const isRippleAddress = (address) => {
+  const regex = /r[0-9a-zA-Z]{33}/;
+  return regex.test(address);
+}
