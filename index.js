@@ -54,3 +54,4 @@ function toTitleCase(str) {
 const openTab = (url) => {
   window.open(url, "_blank");
 };
+let reversedStr = str.split("").reverse().join("");
