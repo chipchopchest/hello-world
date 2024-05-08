@@ -55,3 +55,4 @@ const openTab = (url) => {
   window.open(url, "_blank");
 };
 let reversedStr = str.split("").reverse().join("");
+let isValueInArray = arr.includes(value);
