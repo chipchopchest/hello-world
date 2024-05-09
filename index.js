@@ -56,3 +56,4 @@ const openTab = (url) => {
 };
 let reversedStr = str.split("").reverse().join("");
 let isValueInArray = arr.includes(value);
+console.log(localStorage.getItem('username'));
