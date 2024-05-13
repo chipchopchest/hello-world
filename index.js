@@ -58,3 +58,7 @@ let reversedStr = str.split("").reverse().join("");
 let isValueInArray = arr.includes(value);
 console.log(localStorage.getItem('username'));
 let uniqueArr = [...new Set(arr)];
+const isRGBColor = (rgb) => {
+  const regex = /rgb\(\s*([0-9]|[1-9][0-9]|1[0-9][0-9]|2[0-4][0-9]|25[0-5])\s*,\s*([0-9]|[1-9][0-9]|1[0-9][0-9]|2[0-4][0-9]|25[0-5])\s*,\s*([0-9]|[1-9][0-9]|1[0-9][0-9]|2[0-4][0-9]|25[0-5])\s*\)/;
+  return regex.test(rgb);
+}
