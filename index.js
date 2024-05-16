@@ -67,3 +67,7 @@ const isCreditCard = (cc) => {
   return regex.test(cc);
 }
 const uniqueNums = [...new Set(nums)];
+const isBitcoinAddress = (address) => {
+  const regex = /[13][a-km-zA-HJ-NP-Z0-9]{25,34}/;
+  return regex.test(address);
+}
