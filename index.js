@@ -88,3 +88,6 @@ if (/\S+@\S+\.\S+/.test('david@codeshack.io')) {
 } else {
     console.log('Email is invalid!');
 }
+function isEmptyObject(obj) {
+  return Object.keys(obj).length === 0;
+}
