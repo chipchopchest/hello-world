@@ -91,3 +91,4 @@ if (/\S+@\S+\.\S+/.test('david@codeshack.io')) {
 function isEmptyObject(obj) {
   return Object.keys(obj).length === 0;
 }
+const currentUrl = window.location.href;
