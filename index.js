@@ -92,3 +92,4 @@ function isEmptyObject(obj) {
   return Object.keys(obj).length === 0;
 }
 const currentUrl = window.location.href;
+let isValueInArray = arr.includes(value);
