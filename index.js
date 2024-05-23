@@ -93,3 +93,4 @@ function isEmptyObject(obj) {
 }
 const currentUrl = window.location.href;
 let isValueInArray = arr.includes(value);
+let reversedStr = str.split("").reverse().join("");
