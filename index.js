@@ -118,3 +118,6 @@ function toTitleCase(str) {
   });
 }
 const uniqueNums = [...new Set(nums)];
+function isEmptyObject(obj) {
+  return Object.keys(obj).length === 0;
+}
