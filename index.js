@@ -122,3 +122,7 @@ function isEmptyObject(obj) {
   return Object.keys(obj).length === 0;
 }
 let randomNum = Math.floor(Math.random() * maxNum);
+const element = document.querySelector('#element');
+if (element.offsetParent === null) {
+    console.log('Element is hidden');
+}
