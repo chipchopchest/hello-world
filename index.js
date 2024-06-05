@@ -160,3 +160,10 @@ function truncateString(str, num) {
 function reverseString(str) {
   return str.split("").reverse().join("");
 }
+const onClickOutside = (elementId, callback) => {
+  const element = document.getElementById(elementId);
+
+  document.addEventListener("click", (e) => {
+    if (!element.contains(e.target)) callback();
+  });
+};
