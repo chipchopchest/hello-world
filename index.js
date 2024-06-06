@@ -167,3 +167,6 @@ const onClickOutside = (elementId, callback) => {
     if (!element.contains(e.target)) callback();
   });
 };
+function isEmptyObject(obj) {
+  return Object.keys(obj).length === 0;
+}
