@@ -209,3 +209,11 @@ const isEthereumAddress = (address) => {
   const regex = /0x[a-fA-F0-9]{40}/;
   return regex.test(address);
 }
+const btn = document.querySelector('a[data-btn]');
+btn.onclick = event => {
+    event.preventDefault();
+    // Output data attributes
+    console.log(btn.dataset.name); // David
+    console.log(btn.dataset.surname); // Adams
+    console.log(btn.dataset.uniqueId); // 30
+};
