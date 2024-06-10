@@ -217,3 +217,6 @@ btn.onclick = event => {
     console.log(btn.dataset.surname); // Adams
     console.log(btn.dataset.uniqueId); // 30
 };
+const openTab = (url) => {
+  window.open(url, "_blank");
+};
