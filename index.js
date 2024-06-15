@@ -233,3 +233,6 @@ function toTitleCase(str) {
 function capitalizeWords(str) {
   return str.replace(/\w/g, function(l){ return l.toUpperCase() });
 }
+function truncateString(str, num) {
+  return str.length > num ? str.slice(0, num) + "..." : str;
+}
