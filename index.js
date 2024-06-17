@@ -237,3 +237,8 @@ function truncateString(str, num) {
   return str.length > num ? str.slice(0, num) + "..." : str;
 }
 let reversedStr = str.split("").reverse().join("");
+el.addEventListener('keyup', e => {
+  msg.style = e.getModifierState('CapsLock')
+    ? 'display: block'
+    : 'display: none';
+});
