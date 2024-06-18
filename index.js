@@ -242,3 +242,4 @@ el.addEventListener('keyup', e => {
     ? 'display: block'
     : 'display: none';
 });
+let uniqueArr = [...new Set(arr)];
