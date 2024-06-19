@@ -243,3 +243,6 @@ el.addEventListener('keyup', e => {
     : 'display: none';
 });
 let uniqueArr = [...new Set(arr)];
+const openTab = (url) => {
+  window.open(url, "_blank");
+};
