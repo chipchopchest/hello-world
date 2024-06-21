@@ -251,3 +251,8 @@ if (/\S+@\S+\.\S+/.test('david@codeshack.io')) {
 } else {
     console.log('Email is invalid!');
 }
+function toTitleCase(str) {
+  return str.replace(/\w/g, function(txt) {
+    return txt.charAt(0).toUpperCase() + txt.substr(1).toLowerCase();
+  });
+}
