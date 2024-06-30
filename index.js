@@ -271,3 +271,10 @@ const randomString = (length) => {
 function isEmptyObject(obj) {
   return Object.keys(obj).length === 0;
 }
+const onClickOutside = (elementId, callback) => {
+  const element = document.getElementById(elementId);
+
+  document.addEventListener("click", (e) => {
+    if (!element.contains(e.target)) callback();
+  });
+};
