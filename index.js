@@ -281,3 +281,4 @@ const onClickOutside = (elementId, callback) => {
 function sortByProperty(arr, property) {
   return arr.sort((a, b) => (a[property] > b[property]) ? 1 : -1);
 }
+const currentUrl = window.location.href;
