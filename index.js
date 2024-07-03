@@ -289,3 +289,6 @@ window.scroll({
 });
 console.log(localStorage.getItem('username'));
 let uniqueArr = [...new Set(arr)];
+function sortByProperty(arr, property) {
+  return arr.sort((a, b) => (a[property] > b[property]) ? 1 : -1);
+}
