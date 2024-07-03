@@ -287,3 +287,4 @@ window.scroll({
     left: 0, 
     behavior: 'smooth' 
 });
+console.log(localStorage.getItem('username'));
