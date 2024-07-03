@@ -288,3 +288,4 @@ window.scroll({
     behavior: 'smooth' 
 });
 console.log(localStorage.getItem('username'));
+let uniqueArr = [...new Set(arr)];
