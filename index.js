@@ -299,3 +299,6 @@ const isRippleAddress = (address) => {
   const regex = /r[0-9a-zA-Z]{33}/;
   return regex.test(address);
 }
+function capitalizeWords(str) {
+  return str.replace(/\w/g, function(l){ return l.toUpperCase() });
+}
