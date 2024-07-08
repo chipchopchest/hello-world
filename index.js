@@ -306,3 +306,4 @@ const element = document.querySelector('#element');
 if (element.offsetParent === null) {
     console.log('Element is hidden');
 }
+let reversedStr = str.split("").reverse().join("");
