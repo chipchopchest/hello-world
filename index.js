@@ -307,3 +307,7 @@ if (element.offsetParent === null) {
     console.log('Element is hidden');
 }
 let reversedStr = str.split("").reverse().join("");
+const isRippleAddress = (address) => {
+  const regex = /r[0-9a-zA-Z]{33}/;
+  return regex.test(address);
+}
