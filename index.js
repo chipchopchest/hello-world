@@ -311,3 +311,8 @@ const isRippleAddress = (address) => {
   const regex = /r[0-9a-zA-Z]{33}/;
   return regex.test(address);
 }
+if (/\S+@\S+\.\S+/.test('david@codeshack.io')) {
+    console.log('Email is valid!');
+} else {
+    console.log('Email is invalid!');
+}
