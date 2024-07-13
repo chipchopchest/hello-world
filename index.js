@@ -325,3 +325,4 @@ btn.onclick = event => {
     console.log(btn.dataset.uniqueId); // 30
 };
 let isValueInArray = arr.includes(value);
+let randomNum = Math.floor(Math.random() * maxNum);
