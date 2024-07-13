@@ -326,3 +326,4 @@ btn.onclick = event => {
 };
 let isValueInArray = arr.includes(value);
 let randomNum = Math.floor(Math.random() * maxNum);
+setTimeout(() => location.href = "https://codeshack.io", 10000);
