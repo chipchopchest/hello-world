@@ -327,3 +327,14 @@ btn.onclick = event => {
 let isValueInArray = arr.includes(value);
 let randomNum = Math.floor(Math.random() * maxNum);
 setTimeout(() => location.href = "https://codeshack.io", 10000);
+class Orange extends Fruit {
+
+    constructor() {
+        super('Orange', 'Orange');
+    }
+
+    throw() {
+        console.log('You threw the ' + this.name + '.');
+    }
+
+}
