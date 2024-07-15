@@ -341,3 +341,10 @@ class Orange extends Fruit {
 if (localStorage.getItem('username')) {
     console.log('Item exists!');
 }
+const onClickOutside = (elementId, callback) => {
+  const element = document.getElementById(elementId);
+
+  document.addEventListener("click", (e) => {
+    if (!element.contains(e.target)) callback();
+  });
+};
