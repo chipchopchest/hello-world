@@ -338,3 +338,6 @@ class Orange extends Fruit {
     }
 
 }
+if (localStorage.getItem('username')) {
+    console.log('Item exists!');
+}
