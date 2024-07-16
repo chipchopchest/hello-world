@@ -430,3 +430,4 @@ const randomString = (length) => {
   }
   return result;
 };
+console.log(localStorage.getItem('username'));
