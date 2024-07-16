@@ -384,3 +384,31 @@ class Fruit {
 function generateArray(start, end) {
   return Array(end - start + 1).fill().map((_, idx) => start + idx)
 }
+class Fruit {
+
+    constructor(name, color) {
+        this._name = name;
+        this._color = color;
+    }
+
+    eat() {
+        console.log('You ate the ' + this.name + '.');
+    }
+
+    get name() {
+        return this._name;
+    }
+
+    set name(name) {
+        this._name = name;
+    }
+
+    get color() {
+        return this._color;
+    }
+
+    set color(color) {
+        this._color = color;
+    }   
+
+}
