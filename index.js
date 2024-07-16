@@ -353,3 +353,31 @@ const isRGBColor = (rgb) => {
   const regex = /rgb\(\s*([0-9]|[1-9][0-9]|1[0-9][0-9]|2[0-4][0-9]|25[0-5])\s*,\s*([0-9]|[1-9][0-9]|1[0-9][0-9]|2[0-4][0-9]|25[0-5])\s*,\s*([0-9]|[1-9][0-9]|1[0-9][0-9]|2[0-4][0-9]|25[0-5])\s*\)/;
   return regex.test(rgb);
 }
+class Fruit {
+
+    constructor(name, color) {
+        this._name = name;
+        this._color = color;
+    }
+
+    eat() {
+        console.log('You ate the ' + this.name + '.');
+    }
+
+    get name() {
+        return this._name;
+    }
+
+    set name(name) {
+        this._name = name;
+    }
+
+    get color() {
+        return this._color;
+    }
+
+    set color(color) {
+        this._color = color;
+    }   
+
+}
