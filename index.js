@@ -415,3 +415,6 @@ class Fruit {
 function generateArray(start, end) {
   return Array(end - start + 1).fill().map((_, idx) => start + idx)
 }
+function isEmptyObject(obj) {
+  return Object.keys(obj).length === 0;
+}
