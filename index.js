@@ -439,3 +439,6 @@ window.scroll({
     left: 0, 
     behavior: 'smooth' 
 });
+function capitalizeWords(str) {
+  return str.replace(/\w/g, function(l){ return l.toUpperCase() });
+}
