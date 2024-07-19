@@ -442,3 +442,6 @@ window.scroll({
 function capitalizeWords(str) {
   return str.replace(/\w/g, function(l){ return l.toUpperCase() });
 }
+function reverseString(str) {
+  return str.split("").reverse().join("");
+}
