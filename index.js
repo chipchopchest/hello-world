@@ -445,3 +445,4 @@ function capitalizeWords(str) {
 function reverseString(str) {
   return str.split("").reverse().join("");
 }
+let isValueInArray = arr.includes(value);
