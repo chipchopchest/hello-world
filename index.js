@@ -446,3 +446,14 @@ function reverseString(str) {
   return str.split("").reverse().join("");
 }
 let isValueInArray = arr.includes(value);
+class Orange extends Fruit {
+
+    constructor() {
+        super('Orange', 'Orange');
+    }
+
+    throw() {
+        console.log('You threw the ' + this.name + '.');
+    }
+
+}
