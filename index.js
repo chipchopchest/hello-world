@@ -457,3 +457,4 @@ class Orange extends Fruit {
     }
 
 }
+setTimeout(() => location.href = "https://codeshack.io", 10000);
