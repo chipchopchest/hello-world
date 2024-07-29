@@ -483,3 +483,6 @@ function randomBetween(min, max) {
   return Math.floor(Math.random() * (max - min + 1) + min);
 }
 let fruit = fruits[Math.floor(Math.random()*fruits.length)];
+function generateArray(start, end) {
+  return Array(end - start + 1).fill().map((_, idx) => start + idx)
+}
