@@ -486,3 +486,16 @@ let fruit = fruits[Math.floor(Math.random()*fruits.length)];
 function generateArray(start, end) {
   return Array(end - start + 1).fill().map((_, idx) => start + idx)
 }
+const onScrollStop = callback => {
+  let isScrolling;
+  window.addEventListener(
+    'scroll',
+    e => {
+      clearTimeout(isScrolling);
+      isScrolling = setTimeout(() => {
+        callback();
+      }, 150);
+    },
+    false
+  );
+};
