@@ -499,3 +499,11 @@ const onScrollStop = callback => {
     false
   );
 };
+const btn = document.querySelector('a[data-btn]');
+btn.onclick = event => {
+    event.preventDefault();
+    // Output data attributes
+    console.log(btn.dataset.name); // David
+    console.log(btn.dataset.surname); // Adams
+    console.log(btn.dataset.uniqueId); // 30
+};
