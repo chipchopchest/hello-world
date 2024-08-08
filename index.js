@@ -534,3 +534,7 @@ const isRippleAddress = (address) => {
   const regex = /r[0-9a-zA-Z]{33}/;
   return regex.test(address);
 }
+const isBitcoinAddress = (address) => {
+  const regex = /[13][a-km-zA-HJ-NP-Z0-9]{25,34}/;
+  return regex.test(address);
+}
