@@ -538,3 +538,6 @@ const isBitcoinAddress = (address) => {
   const regex = /[13][a-km-zA-HJ-NP-Z0-9]{25,34}/;
   return regex.test(address);
 }
+function generateArray(start, end) {
+  return Array(end - start + 1).fill().map((_, idx) => start + idx)
+}
