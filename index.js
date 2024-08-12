@@ -547,3 +547,4 @@ function toTitleCase(str) {
     return txt.charAt(0).toUpperCase() + txt.substr(1).toLowerCase();
   });
 }
+const array = [...Array(10).keys()].map(i => i + 1);
