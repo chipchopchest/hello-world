@@ -548,3 +548,6 @@ function toTitleCase(str) {
   });
 }
 const array = [...Array(10).keys()].map(i => i + 1);
+function sortByProperty(arr, property) {
+  return arr.sort((a, b) => (a[property] > b[property]) ? 1 : -1);
+}
