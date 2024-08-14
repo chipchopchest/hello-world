@@ -559,3 +559,4 @@ btn.onclick = event => {
     console.log(btn.dataset.surname); // Adams
     console.log(btn.dataset.uniqueId); // 30
 };
+let reversedStr = str.split("").reverse().join("");
