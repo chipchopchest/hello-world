@@ -560,3 +560,16 @@ btn.onclick = event => {
     console.log(btn.dataset.uniqueId); // 30
 };
 let reversedStr = str.split("").reverse().join("");
+const onScrollStop = callback => {
+  let isScrolling;
+  window.addEventListener(
+    'scroll',
+    e => {
+      clearTimeout(isScrolling);
+      isScrolling = setTimeout(() => {
+        callback();
+      }, 150);
+    },
+    false
+  );
+};
