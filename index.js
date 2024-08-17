@@ -580,3 +580,4 @@ const onClickOutside = (elementId, callback) => {
     if (!element.contains(e.target)) callback();
   });
 };
+let randomNum = Math.floor(Math.random() * maxNum);
