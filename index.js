@@ -581,3 +581,7 @@ const onClickOutside = (elementId, callback) => {
   });
 };
 let randomNum = Math.floor(Math.random() * maxNum);
+const element = document.querySelector('#element');
+if (element.offsetParent === null) {
+    console.log('Element is hidden');
+}
