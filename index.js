@@ -593,3 +593,6 @@ const isRippleAddress = (address) => {
   return regex.test(address);
 }
 let fruit = fruits[Math.floor(Math.random()*fruits.length)];
+function randomBetween(min, max) {
+  return Math.floor(Math.random() * (max - min + 1) + min);
+}
