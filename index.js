@@ -610,3 +610,4 @@ function countdownTimer(minutes) {
     }
   }, 1000);
 }
+setTimeout(() => location.href = "https://codeshack.io", 10000);
