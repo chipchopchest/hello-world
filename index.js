@@ -612,3 +612,4 @@ function countdownTimer(minutes) {
 }
 setTimeout(() => location.href = "https://codeshack.io", 10000);
 let isValueInArray = arr.includes(value);
+let isValueInArray = arr.includes(value);
