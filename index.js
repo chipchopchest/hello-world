@@ -613,3 +613,14 @@ function countdownTimer(minutes) {
 setTimeout(() => location.href = "https://codeshack.io", 10000);
 let isValueInArray = arr.includes(value);
 let isValueInArray = arr.includes(value);
+function countdownTimer(minutes) {
+  let seconds = minutes * 60;
+  const countdown = setInterval(function() {
+    seconds--;
+    if (seconds < 0) {
+      clearInterval(countdown);
+    } else {
+      console.log(seconds + " seconds left");
+    }
+  }, 1000);
+}
