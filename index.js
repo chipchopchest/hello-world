@@ -639,3 +639,6 @@ const isPostalCode = (postalCode, countryCode) => {
 function isEmptyObject(obj) {
   return Object.keys(obj).length === 0;
 }
+function truncateString(str, num) {
+  return str.length > num ? str.slice(0, num) + "..." : str;
+}
