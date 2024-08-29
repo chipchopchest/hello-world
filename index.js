@@ -636,3 +636,6 @@ const isPostalCode = (postalCode, countryCode) => {
     return false;
   }
 }
+function isEmptyObject(obj) {
+  return Object.keys(obj).length === 0;
+}
