@@ -645,3 +645,6 @@ function truncateString(str, num) {
 function reverseString(str) {
   return str.split("").reverse().join("");
 }
+if (localStorage.getItem('username')) {
+    console.log('Item exists!');
+}
