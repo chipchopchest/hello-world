@@ -669,3 +669,4 @@ const isRippleAddress = (address) => {
 if (localStorage.getItem('username')) {
     console.log('Item exists!');
 }
+const uniqueNums = [...new Set(nums)];
