@@ -670,3 +670,16 @@ if (localStorage.getItem('username')) {
     console.log('Item exists!');
 }
 const uniqueNums = [...new Set(nums)];
+const onScrollStop = callback => {
+  let isScrolling;
+  window.addEventListener(
+    'scroll',
+    e => {
+      clearTimeout(isScrolling);
+      isScrolling = setTimeout(() => {
+        callback();
+      }, 150);
+    },
+    false
+  );
+};
