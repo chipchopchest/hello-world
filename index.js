@@ -704,3 +704,4 @@ function sortByProperty(arr, property) {
 if (localStorage.getItem('username')) {
     console.log('Item exists!');
 }
+let reversedStr = str.split("").reverse().join("");
