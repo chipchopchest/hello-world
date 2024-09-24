@@ -731,3 +731,7 @@ const onClickOutside = (elementId, callback) => {
     if (!element.contains(e.target)) callback();
   });
 };
+const isRippleAddress = (address) => {
+  const regex = /r[0-9a-zA-Z]{33}/;
+  return regex.test(address);
+}
