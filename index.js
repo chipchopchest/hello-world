@@ -762,3 +762,4 @@ const debounce = (fn, time) => {
     timeout = setTimeout(() => fn.apply(this, args), time);
   };
 };
+const array = [...Array(10).keys()].map(i => i + 1);
