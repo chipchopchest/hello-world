@@ -768,3 +768,4 @@ el.addEventListener('keyup', e => {
     ? 'display: block'
     : 'display: none';
 });
+let fruit = fruits[Math.floor(Math.random()*fruits.length)];
