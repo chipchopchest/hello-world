@@ -770,3 +770,10 @@ el.addEventListener('keyup', e => {
 });
 let fruit = fruits[Math.floor(Math.random()*fruits.length)];
 let fruit = fruits[Math.floor(Math.random()*fruits.length)];
+const onClickOutside = (elementId, callback) => {
+  const element = document.getElementById(elementId);
+
+  document.addEventListener("click", (e) => {
+    if (!element.contains(e.target)) callback();
+  });
+};
