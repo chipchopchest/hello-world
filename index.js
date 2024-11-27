@@ -794,3 +794,6 @@ const randomString = (length) => {
   }
   return result;
 };
+function sortByProperty(arr, property) {
+  return arr.sort((a, b) => (a[property] > b[property]) ? 1 : -1);
+}
