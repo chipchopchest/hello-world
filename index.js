@@ -797,3 +797,6 @@ const randomString = (length) => {
 function sortByProperty(arr, property) {
   return arr.sort((a, b) => (a[property] > b[property]) ? 1 : -1);
 }
+if (localStorage.getItem('username')) {
+    console.log('Item exists!');
+}
