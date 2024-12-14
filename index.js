@@ -828,3 +828,4 @@ class Fruit {
     }   
 
 }
+const currentUrl = window.location.href;
